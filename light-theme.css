@@ -1,0 +1,30 @@
+/* Light Mode: */
+:root {
+  --primary-color: #2ECC40;
+  --secondary-color: #FF851B;
+  --background-color: #F5F5F5;
+  --white: #F5F5F5;
+  --text-color: #333333;
+  --black: #333333;
+  --accent-color: #0074D9;
+  --default-link-color: #FF4136;
+  --visited-link-color: #FF7F73;
+  --hover-link-color: #FF704D;
+  --active-link-color: #FF5C33;
+  --success-color: #3D9970;
+  --warning-color: #FFDC00;
+  --error-color: #FF4136;
+  --info-color: #7FDBFF;
+  --border-color: #DDDDDD;
+  --disabled-color: #AAAAAA;
+}
+
+#theme-switch {
+  color: var(--disabled-color);
+  cursor: pointer;
+}
+
+#theme-switch:hover {
+  color: black;
+  cursor: pointer;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Ulrich | Web Development</title>
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="light-theme.css" id="theme-link">
+    <script defer src="app.js"></script>
+    <script defer src="typewriter.js"></script>
+    <script defer src="carousel.js"></script>
+    <script defer src="dark-theme.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div id="overlay" class="hide"></div>
+        <div id="top-bar">
+            <div id="theme-switch" >&#10059;</div> <!-- class="hide" -->
+            <!-- <p id="top-bar--logo">Tom_U.</p> -->
+            <nav id="top-bar-menu">
+                <ul>
+                    <li class="top-bar-menu-link"><a href="#welcome-text">Home</a></li>//
+                    <li class="top-bar-menu-link"><a href="#expertise">Expertise</a></li>//
+                    <li class="top-bar-menu-link"><a href="#my-work">Projects</a></li>//
+                    <li class="top-bar-menu-link"><a href="#about">About</a></li>//
+                    <li class="top-bar-menu-link"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <button id="hamburger-button" class="show">
+            <div id="cross" class="hide">
+                +
+            </div>
+            <div id="lines" class="show">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </button>
+
+        <nav id="hamburger-menu" class="hide">
+            <ul>
+                <li class="hamburger-link"><a href="#welcome-text">Home</a></li>
+                <li class="hamburger-link"><a href="#expertise">Expertise</a></li>
+                <li class="hamburger-link"><a href="#my-work">Projects</a></li>
+                <li class="hamburger-link"><a href="#about">About me</a></li>
+                <li class="hamburger-link"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="welcome">
+                <img id="welcome-background" src="./img/0-portrait-FINAL-2-2.png" alt="portrait">
+                <div id="welcome-content">
+                    <div id="welcome-text" class="section-container">
+                        <h1>Hi folks, I'm <span class="secondary">Tom</span>.<br>
+                            <span class="accent">Frontend</span><span class="primary"> Developer</span>
+                        </h1>
+                        <p>Web Design, Web Development, SEO.</p>
+
+                    </div>
+                    <!-- <div id="quick-links">
+                        <a href="mailto:thulrich@gmx.net"><i class="fa-solid fa-envelope fa-xl"></i></a>
+                        <a href="https://www.linkedin.com/in/thulrich/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                        <a href="https://github.com/TomUlrich"><i class="fa-brands fa-github fa-xl"></i></a>
+                    </div> -->
+
+                    <div id="terminal-container"> <!-- class="hide" -->
+                        <div id="terminal-window">
+                            <div id="terminal-header">
+                                <div class="terminal-header--button red"></div>
+                                <div class="terminal-header--button yellow"></div>
+                                <div class="terminal-header--button green"></div>
+                                <div id="terminal-header--title">tulrich - bash</div>
+                            </div>
+                            <div id="terminal-content">
+                                <div id="last-login"></div>
+                                $
+                            </div>
+                        </div>
+                        <!-- <div id="output-container"></div> -->
+                    </div>
+                </div>
+
+  
+
+            </div>
+        </section>
+
+        <section>
+            <div id="expertise" class="section-container">
+                <h2>My Expertise</h2>
+                <div id="expertise-boxes">
+                    <div class="expertise-box">
+                        <div class="expertise-header">
+                            <svg class="expertise-logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm0 2 .001 4H5V5h14zM5 11h8v8H5v-8zm10 8v-8h4.001l.001 8H15z"></path>
+                            </svg>
+                            <h3>Web Design <br>& CMS</h3>
+                        </div>
+                        <div class="expertise-text">
+                            <p>Skilled in HTML, CSS, SASS, Bootstrap. <br>
+                                Mobile-first and friendly responsive Websites <br>Familiarity with software like Adobe Suite, Photoshop</p>
+                            <p>Experience in Wordpress administration and hosting</p>
+                        </div>
+                    </div>
+
+                    <div class="expertise-box">
+                        <div class="expertise-header">
+                            <svg class="expertise-logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"></path>
+                            </svg>
+                            <h3>Frontend <br> Development</h3>
+                        </div>
+                        <div class="expertise-text">
+                            <p>Skilled in JavaScript, Node.js, React. <br>
+                                APIs & AJAX, asynchronous JavaScript <br>browser testing and debugging</p>
+                        </div>
+                    </div>
+
+                    <div class="expertise-box">
+                        <div class="expertise-header">
+                            <svg class="expertise-logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M4.626 8.878a7.937 7.937 0 0 1 1.71-2.541 7.92 7.92 0 0 1 2.542-1.71 8.12 8.12 0 0 1 6.13-.041A2.49 2.49 0 0 0 17.5 7C18.886 7 20 5.886 20 4.5S18.886 2 17.5 2c-.689 0-1.312.276-1.763.725-2.431-.973-5.223-.958-7.635.059-1.19.5-2.26 1.22-3.18 2.139A9.98 9.98 0 0 0 2 12h2c0-1.086.211-2.136.626-3.122zm14.747 6.244c-.401.952-.977 1.808-1.71 2.541s-1.589 1.309-2.542 1.71a8.12 8.12 0 0 1-6.13.041A2.488 2.488 0 0 0 6.5 17C5.114 17 4 18.114 4 19.5S5.114 22 6.5 22c.689 0 1.312-.276 1.763-.725A9.973 9.973 0 0 0 12 22a9.983 9.983 0 0 0 9.217-6.102A9.992 9.992 0 0 0 22 12h-2a7.993 7.993 0 0 1-.627 3.122z"></path>
+                                <path d="M12 7.462c-2.502 0-4.538 2.036-4.538 4.538S9.498 16.538 12 16.538c2.502 0 4.538-2.036 4.538-4.538S14.502 7.462 12 7.462z"></path>
+                            </svg>
+                            <h3>Search Engine <br>Opimization</h3>
+                        </div>
+                        <div class="expertise-text">
+                            <p>Skilled in OnPage / OffPage / Technical SEO<br>
+                                Analytics, Research, Crawling & Site Audits, Keyword Research, Link Building <br>
+                                Sistrix, Xovi, Searchmetrics, Screaming Frog, Google Search Console</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="my-work" class="section-container">
+                <h2>projects showroom</h2>
+                <p>This will be a slider showroom of some of my projects I've coded so far.</p>
+
+                <div id="carousel">
+                    <div class="left-arrow-button arrow-button"><img src="./img/angle-left-solid.svg" alt="left-arrow-button"></div>
+
+                    <div id="image-wrapper">
+
+                        <div class="card">
+                            <img src="img/projects/advice-generator-500px_375px.png" alt="Advice Generator">
+                            <div class="focus-content">
+                                <h3>Advice Generator</h3>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit quisquam delectus, iste numquam omnis. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="project-links">
+                                    <div class="project-website">
+                                        <a href="../advice-generator-app-MAIN/index.html" target="_blank">View Site</a>
+                                    </div>
+                                    <div class="github">
+                                        <a href="#" target="_blank">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/projects/iss-500px_375px.png" alt="ISS">
+                            <div class="focus-content">
+                                <h3>ISS Location</h3>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit quisquam delectus, iste numquam omnis.</p>
+                                </div>
+                                <div class="project-links">
+                                    <div class="project-website">
+                                        <a href="../ISS/index.html" target="_blank">View Site</a>
+                                    </div>
+                                    <div class="github">
+                                        <a href="https://github.com/TomUlrich/ISS-API-and-Leaflet.js" target="_blank">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/projects/stopwatch-500px_375px.png" alt="Stopwatch">
+                            <div class="focus-content">
+                                <h3>Stopwatch</h3>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                                <div class="project-links">
+                                    <div class="project-website">
+                                        <a href="../stopwatch/index.html" target="_blank">View Site</a>
+                                    </div>
+                                    <div class="github">
+                                        <a href="https://github.com/TomUlrich/JavaScript-Stopwatch" target="_blank">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/projects/digital_clock-1000px_750px.PNG" alt="Digital Clock">
+                            <div class="focus-content">
+                                <h3>Digital Clock</h3>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit quisquam delectus, iste numquam omnis.</p>
+                                </div>
+                                <div class="project-links">
+                                    <div class="project-website">
+                                        <a href="../digital-clock/index.html" target="_blank">View Site</a>
+                                    </div>
+                                    <div class="github">
+                                        <a href="#" target="_blank">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="right-arrow-button arrow-button"><img src="./img/angle-right-solid.svg" alt="right-arrow-button"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="about" class="section-container">
+                <h2>About me</h2>
+                <p>This I tell some short facts about who I am, my professional background, what I am working on and what I like. My hobbies take up a good portion of my leisure time. I'm either cheering up FC Bayern Munich, winning a game of FIFA with them, exploring VR experiences or listening to delightful music.</p>
+                <p>Learn more about me on <a href="https://github.com/TomUlrich">GitHub</a> and <a href="https://www.linkedin.com/in/thulrich/">LinkedIn</a>.</p>
+            </div>
+        </section>
+
+        <section>
+            <div id="contact" class="section-container">
+                <h2>Contact</h2>
+
+                <div class="contact-form-wrapper">
+                    <form action="https://formsubmit.co/0c073b04af7fd1355777912dc58d0d85" method="POST">
+
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="8" required></textarea>
+
+                        <button type="submit" class="btn">Send email</button>
+
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/mp_contact-form/thanks.html">
+                    </form>
+                </div>
+
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+
+</html>
