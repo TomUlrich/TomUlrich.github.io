@@ -21,7 +21,6 @@
 
 #theme-switch {
   color: var(--disabled-color);
-  cursor: pointer;
 }
 
 #theme-switch:hover {
