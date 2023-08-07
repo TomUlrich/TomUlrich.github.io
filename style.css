@@ -81,11 +81,10 @@ body {
 }
 
 header {
-  position: sticky;
   position: fixed;
   top: 0;
   z-index: 9999;
-  width:100vw;
+  width: 100vw;
 }
 
 /* # Top Bar */
@@ -491,13 +490,23 @@ label {
 /* # Buttons END */
 
 /* # Mobile First breakpoints */
-/* @media only screen and (max-width: 600px) {
-  header {
-    position: fixed;
-    z-index: 999;
+@media only screen and (max-width: 600px) {
+  #top-bar-menu {
+    display: none;
   }
-} */
+  #hamburger-button {
+    display: block;
+    visibility: visible;
+  }
+}
 
+@media only screen and (min-width: 601px) {
+ 
+  #hamburger-button {
+    display: none;
+    /* visibility: visible; */
+  }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* @media only screen and (min-width: 500px) {
 } */
