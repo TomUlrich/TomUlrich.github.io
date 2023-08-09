@@ -1,5 +1,6 @@
 # ignore ALL .log files
 # *.log
+*.md
 
 # ignore ALL files in ANY directory named files
 **/files

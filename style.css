@@ -8,6 +8,7 @@
 /* # Headlines */
 h1 {
   color: var(--text-color);
+  /* -webkit-text-stroke: 2px white; */
   /* font-family: 'Roboto', sans-serif; */
   /* font-family: 'Roboto Black 900', sans-serif;
   font-family: 'Vazirmatn', sans-serif;
@@ -201,7 +202,7 @@ h1 + p {
   position: relative;
   overflow: hidden;
   position: relative;
-  /* width: 100vh; */
+  width: 100%;
   height: 100vh;
 }
 
@@ -241,9 +242,9 @@ h1 + p {
 
 #terminal-container {
   display: flex;
-  /* position: absolute;
-  left: -1000px;
-  bottom: -1000px; */
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
   opacity: 0;
   transition: 150ms ease-in;
 }
@@ -350,12 +351,17 @@ footer {
   visibility: hidden;
 }
 
+.visibility-on {
+  visibility: visible;
+}
+
 .visibility-off {
   visibility: hidden;
 }
 
-.visibility-on {
-  visibility: visible;
+.strokeme {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .accent {
