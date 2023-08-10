@@ -6,6 +6,47 @@
 
 ## To do
 
+**WE CSS Übungen**
+
+- [Ein-/Aus-Schalter im iOS-Stil](https://de.webmasters-europe.org/my-account/my-courses/1916/modules/1943/classes/2701/chapters/adde315ce55e7514358a94f66d9b6a5f)
+
+- Flip Cards:
+  https://de.webmasters-europe.org/my-account/my-courses/1916/modules/1943/classes/2701/chapters/588078b5ddca08e43aced464844e7b45
+
+- [CSS Tabs](https://de.webmasters-europe.org/my-account/my-courses/1916/modules/1943/classes/2701/chapters/e029316690e2c903653aa572a7ebaff8)
+
+- [vw/vh:](https://de.webmasters-europe.org/my-account/my-courses/1916/modules/1943/classes/2701/chapters/3c196e05e2efa5608640f7c9dd8e553b)
+  1vw = 1% der Breite des Anzeigefensters (viewport width)
+  1vh = 1% der Höhe des Anzeigefensters (viewport height)
+  1vmin = 1vw oder 1vh, je nachdem, welche der beiden kleiner ist
+  1vmax = 1vw oder 1vh, je nachdem, welche der beiden größer ist
+
+- [Giant Font Size Bug vermeiden:](https://de.webmasters-europe.org/my-account/my-courses/1916/modules/1943/classes/2701/chapters/ae44ff197381e8d93c8841daf6b2d721)
+
+```css
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1em;
+}
+```
+
+- [mask & background-clip](https://de.webmasters-europe.org/my-account/my-courses/1916/modules/1943/classes/2701/chapters/5338971ecfdf5c00b349d62d208c8f9b)
+
+- [normalize.css](https://github.com/csstools/normalize.css/)
+
+- Multiple stylesheets:
+
+  - basics.css
+  - layout.css
+  - navi-inline.css
+  - content.css
+  - selection.css
+  - webfonts.css
+  - transformations.css
+
 - Start screen: Text Portrait, Animated coding text
 - ...a Berlin based webdeveloper + BerlinSVG
 
@@ -18,18 +59,16 @@
 
 - [Web Accessibility](https://wave.webaim.org/)
 
-- carousel.css an style.css anpassen  
+- carousel.css an style.css anpassen
 
 - z-indizes & positions (solved):
 
   ```css
-    <!-- z-index: carousel vs. top-bar -->
-  #carousel {
+  <!--z-index: carousel vs. top-bar --> #carousel {
     position: relative;
     z-index: -10; /* negative index works, but no hover-effect anymore */
   }
-  <!-- Solved: -->
-  header {
+  <!--solved: --> header {
     z-index: 2;
   }
   ```
@@ -39,7 +78,7 @@
 ### Links & Buttons
 
 - w3docs: [How to Add an HTML Button that Acts Like a Link
-](https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html)
+  ](https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html)
 
 - w3schools: [CSS Buttons](https://www.w3schools.com/csS/css3_buttons.asp)
 
@@ -47,8 +86,7 @@
 
 ### Colors
 
-- [Color variables](https://medium.com/codyhouse/create-your-design-system-part-3-colors-798e4729921f)  
-
+- [Color variables](https://medium.com/codyhouse/create-your-design-system-part-3-colors-798e4729921f)
 
 ### Carousel
 

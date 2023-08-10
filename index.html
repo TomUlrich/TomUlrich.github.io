@@ -6,33 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas Ulrich | Web Development</title>
-    <link rel="stylesheet" href="carousel.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="light-theme.css" id="theme-link">
-    <script defer src="app.js"></script>
-    <script defer src="typewriter.js"></script>
-    <script defer src="carousel.js"></script>
-    <script defer src="dark-theme.js"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/light-theme.css" id="theme-link">
+
+    <!-- JavaScript -->
+    <script defer src="./js/app.js"></script>
+    <script defer src="./js/typewriter.js"></script>
+    <script defer src="./js/carousel.js"></script>
+    <script defer src="./js/dark-theme.js"></script>
 
 </head>
 
 <body>
+    <div id="overlay" class="hide"></div>
     <header>
-        <div id="overlay" class="hide"></div>
-        <div id="top-bar">
-            <div id="theme-switch">&#10059;</div> <!-- class="hide" -->
-            <!-- <p id="top-bar--logo">Tom_U.</p> -->
-            <nav id="top-bar-menu">
-                <ul>
-                    <li class="top-bar-menu-link"><a href="#welcome-text">Home</a></li>//
-                    <li class="top-bar-menu-link"><a href="#expertise">Expertise</a></li>//
-                    <li class="top-bar-menu-link"><a href="#my-work">Projects</a></li>//
-                    <li class="top-bar-menu-link"><a href="#about">About</a></li>//
-                    <li class="top-bar-menu-link"><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-
+        <!-- todo: #hamburger-button as <div>, not <button> -->
         <button id="hamburger-button">
             <div id="cross" class="hide">
                 +
@@ -53,6 +43,19 @@
                 <li class="hamburger-link"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
+        <div id="top-bar">
+            <div id="theme-switch">&#10059;</div>
+            <nav id="top-bar-menu">
+                <ul>
+                    <li class="top-bar-menu-link"><a href="#welcome-text">Home</a></li>//
+                    <li class="top-bar-menu-link"><a href="#expertise">Expertise</a></li>//
+                    <li class="top-bar-menu-link"><a href="#my-work">Projects</a></li>//
+                    <li class="top-bar-menu-link"><a href="#about">About</a></li>//
+                    <li class="top-bar-menu-link"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -61,31 +64,27 @@
                 <img id="welcome-background" src="./img/0-portrait-FINAL-2-2.png" alt="portrait">
                 <div id="welcome-content">
                     <div id="welcome-text" class="section-container">
-                        <h1 class="strokeme">I am <span class="secondary">Tom</span>.<br>
+                        <h1>I am <span class="secondary">Tom</span><br>
                             <span class="accent">Frontend</span><span class="primary"> Developer</span>
                         </h1>
                         <p>Web Design, Web Development, SEO.</p>
-
                     </div>
-
-
                 </div>
-
-                    <div id="terminal-container"> <!-- class="hide" -->
-                        <div id="terminal-window">
-                            <div id="terminal-header">
-                                <div class="terminal-header__button red"></div>
-                                <div class="terminal-header__button yellow"></div>
-                                <div class="terminal-header__button green"></div>
-                                <div id="terminal-header__title">tulrich -- Terminal</div>
-                            </div>
-                            <div id="terminal-content">
-                                <div id="last-login"></div>
-                                $
-                            </div>
+                
+                <div id="terminal-container"> <!-- class="hide" -->
+                    <div id="terminal-window">
+                        <div id="terminal-header">
+                            <div class="terminal-header__button red"></div>
+                            <div class="terminal-header__button yellow"></div>
+                            <div class="terminal-header__button green"></div>
+                            <div id="terminal-header__title">tulrich -- Terminal</div>
                         </div>
-                        <!-- <div id="output-container"></div> -->
+                        <div id="terminal-content">
+                            <div id="last-login"></div>
+                            $
+                        </div>
                     </div>
+                </div>
 
             </div>
         </section>

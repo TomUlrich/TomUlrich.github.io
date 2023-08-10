@@ -67,7 +67,7 @@ async function typeWriter() {
     themeSwitch.style.opacity = '1';
     // load dark-theme.css
     // dark-theme.js: const theme = document.getElementById('theme-link');
-    theme.href = 'dark-theme.css';
+    theme.href = './css/dark-theme.css';
     htmlBody.style.opacity = '1';
     themeSwitch.style.transition = 'none';
     i = 0;
