@@ -23,16 +23,17 @@
     <div id="overlay" class="hide"></div>
     <header>
         <!-- todo: #hamburger-button as <div>, not <button> -->
-        <button id="hamburger-button">
+        <div id="hamburger-button">
             <div id="cross" class="hide">
-                +
+                &#128937;
             </div>
             <div id="lines" class="show">
+                <!-- &#9776; -->
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-        </button>
+        </div>
 
         <nav id="hamburger-menu" class="hide">
             <ul>
@@ -63,7 +64,7 @@
             <div id="welcome">
                 <img id="welcome-background" src="./img/0-portrait-FINAL-2-2.png" alt="portrait">
                 <div id="welcome-content">
-                    <div id="welcome-text" class="section-container">
+                    <div id="welcome-text" class="navigation-anchor">
                         <h1>I am <span class="secondary">Tom</span><br>
                             <span class="accent">Frontend</span><span class="primary"> Developer</span>
                         </h1>
@@ -80,7 +81,7 @@
                             <div id="terminal-header__title">tulrich -- Terminal</div>
                         </div>
                         <div id="terminal-content">
-                            <div id="last-login"></div>
+                            <!-- <div id="last-login"></div> -->
                             $
                         </div>
                     </div>
@@ -90,12 +91,13 @@
         </section>
 
         <section>
-            <div id="expertise" class="section-container">
+            <div id="expertise" class="navigation-anchor">
                 <h2>My Expertise</h2>
                 <div id="expertise-boxes">
                     <div class="expertise-box">
                         <div class="expertise-header">
-                            <svg class="expertise-logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <!-- todo: no Inline CSS!!! -->
+                            <svg class="expertise-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm0 2 .001 4H5V5h14zM5 11h8v8H5v-8zm10 8v-8h4.001l.001 8H15z"></path>
                             </svg>
                             <h3>Web Design <br>& CMS</h3>
@@ -109,7 +111,7 @@
 
                     <div class="expertise-box">
                         <div class="expertise-header">
-                            <svg class="expertise-logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <svg class="expertise-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"></path>
                             </svg>
                             <h3>Frontend <br> Development</h3>
@@ -122,7 +124,7 @@
 
                     <div class="expertise-box">
                         <div class="expertise-header">
-                            <svg class="expertise-logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <svg class="expertise-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path d="M4.626 8.878a7.937 7.937 0 0 1 1.71-2.541 7.92 7.92 0 0 1 2.542-1.71 8.12 8.12 0 0 1 6.13-.041A2.49 2.49 0 0 0 17.5 7C18.886 7 20 5.886 20 4.5S18.886 2 17.5 2c-.689 0-1.312.276-1.763.725-2.431-.973-5.223-.958-7.635.059-1.19.5-2.26 1.22-3.18 2.139A9.98 9.98 0 0 0 2 12h2c0-1.086.211-2.136.626-3.122zm14.747 6.244c-.401.952-.977 1.808-1.71 2.541s-1.589 1.309-2.542 1.71a8.12 8.12 0 0 1-6.13.041A2.488 2.488 0 0 0 6.5 17C5.114 17 4 18.114 4 19.5S5.114 22 6.5 22c.689 0 1.312-.276 1.763-.725A9.973 9.973 0 0 0 12 22a9.983 9.983 0 0 0 9.217-6.102A9.992 9.992 0 0 0 22 12h-2a7.993 7.993 0 0 1-.627 3.122z"></path>
                                 <path d="M12 7.462c-2.502 0-4.538 2.036-4.538 4.538S9.498 16.538 12 16.538c2.502 0 4.538-2.036 4.538-4.538S14.502 7.462 12 7.462z"></path>
                             </svg>
@@ -139,7 +141,7 @@
         </section>
 
         <section>
-            <div id="my-work" class="section-container">
+            <div id="my-work" class="navigation-anchor">
                 <h2>projects showroom</h2>
                 <p>This will be a slider showroom of some of my projects I've coded so far.</p>
 
@@ -227,14 +229,14 @@
         </section>
 
         <section>
-            <div id="about" class="section-container">
+            <div id="about" class="navigation-anchor">
                 <h2>About me</h2>
                 <p>This I tell some short facts about who I am, my professional background, what I am working on and what I like.</p>
             </div>
         </section>
 
         <section>
-            <div id="contact" class="section-container">
+            <div id="contact" class="navigation-anchor">
                 <h2>Contact</h2>
                 <div id="quick-links">
                     <div id="quick-links-text">
@@ -274,6 +276,7 @@
     </main>
 
     <footer>
+        <div id="imprint"></div>
     </footer>
 </body>
 

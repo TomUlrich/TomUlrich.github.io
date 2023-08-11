@@ -21,7 +21,7 @@
   1vmin = 1vw oder 1vh, je nachdem, welche der beiden kleiner ist
   1vmax = 1vw oder 1vh, je nachdem, welche der beiden größer ist
 
-- [Giant Font Size Bug vermeiden:](https://de.webmasters-europe.org/my-account/my-courses/1916/modules/1943/classes/2701/chapters/ae44ff197381e8d93c8841daf6b2d721)
+<!-- - [Giant Font Size Bug vermeiden:](https://de.webmasters-europe.org/my-account/my-courses/1916/modules/1943/classes/2701/chapters/ae44ff197381e8d93c8841daf6b2d721)
 
 ```css
 html {
@@ -31,21 +31,11 @@ html {
 body {
   font-size: 1em;
 }
-```
+``` -->
 
 - [mask & background-clip](https://de.webmasters-europe.org/my-account/my-courses/1916/modules/1943/classes/2701/chapters/5338971ecfdf5c00b349d62d208c8f9b)
 
 - [normalize.css](https://github.com/csstools/normalize.css/)
-
-- Multiple stylesheets:
-
-  - basics.css
-  - layout.css
-  - navi-inline.css
-  - content.css
-  - selection.css
-  - webfonts.css
-  - transformations.css
 
 - Start screen: Text Portrait, Animated coding text
 - ...a Berlin based webdeveloper + BerlinSVG
@@ -53,13 +43,13 @@ body {
 - carousel slide-up when tapping (for mobile advices)
 - carousel slide-up only till text is ending
 
-- CSS darkmode colors
+<!-- - CSS darkmode colors -->
 
-- nav bar instead of hamburger button for desktop
+<!-- - nav bar instead of hamburger button for desktop -->
 
 - [Web Accessibility](https://wave.webaim.org/)
 
-- carousel.css an style.css anpassen
+- carousel.css durch flipcards ersetzen
 
 - z-indizes & positions (solved):
 

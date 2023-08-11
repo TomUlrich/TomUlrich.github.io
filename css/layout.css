@@ -122,7 +122,7 @@ header {
   width: 100%;
   height: 100%;
   background: var(--background-color);
-  opacity: 0.9;
+  opacity: 0.98;
   z-index: 15;
 }
 
@@ -130,37 +130,35 @@ header {
 #hamburger-button {
   position: fixed;
   z-index: 18;
-  top: 2px;
-  right: 2px;
-  height: 36px;
-  width: 36px;
-  border: 2px solid var(--black);
-  border-radius: 4px;
+  top: 8px;
+  right: 8px;
+  height: 1.8rem;
+  width: 1.8rem;
+  border: none;
+  border-radius: 1px;
   cursor: pointer;
+  /* background-color: var(--white); */
 }
 
 #cross {
-  /*! toggleDisplay function: */
-  /* display: none; */
-  rotate: 45deg;
   font-size: 1.8rem;
   justify-content: center;
   align-items: center;
+
 }
 
 #lines {
+  padding-top: 10px;
   display: flex;
-  /*! toggleDisplay function: */
-  /* display: none; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
 }
 
 .line {
   height: 2px;
-  width: 20px;
+  width: 22px;
   background-color: var(--black);
 }
 
@@ -169,15 +167,24 @@ header {
   position: fixed;
   top: 5px;
   right: 5px;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   text-align: center;
   padding-top: 200px;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
 #hamburger-menu li {
   list-style-type: none;
   margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+#hamburger-menu a {
+
+  color: var(--text-color);
 }
 
 /* --------- Top Bar --------- */
@@ -233,7 +240,7 @@ header {
 #welcome {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -431,7 +438,7 @@ footer {
 
 /* _________ Helper Classes ____________ */
 
-.section-container {
+.navigation-anchor {
   padding-top: 5rem;
 }
 
@@ -500,7 +507,7 @@ footer {
   }
 
   #hamburger-button {
-    display: block;
+    /* display: block; */
     visibility: visible;
   }
 

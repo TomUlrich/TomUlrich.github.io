@@ -3,4 +3,4 @@
 *.md
 
 # ignore ALL files in ANY directory named files
-**/files
+# **/files

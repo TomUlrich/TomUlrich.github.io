@@ -27,3 +27,7 @@
     color: white;
     cursor: pointer;
   }
+
+  .line {
+    background-color: var(--white);
+  }
