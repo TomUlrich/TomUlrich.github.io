@@ -22,268 +22,269 @@
 <body>
     <div class="wrapper">
 
-    <div id="overlay" class="hide"></div>
+        <div id="overlay" class="hide"></div>
 
-    <header>
-        <div id="hamburger-button">
-            <!-- todo: https://www.svgrepo.com/vectors/cross/ -->
-            <div id="cross" class="hide">
-                <img id="cross-svg" src="./img/cross-svgrepo-com.svg" alt="close menu button">
+        <header>
+            <div id="hamburger-button">
+                <div id="cross" class="hide">
+                    <img id="cross-svg" src="./img/cross-svgrepo-com.svg" alt="close menu button">
+                </div>
+                <div id="lines" class="show">
+                    <img id="lines-svg" src="./img/menu-svgrepo-com.svg" alt="open menu button">
+                </div>
             </div>
-            <!-- todo: https://www.svgrepo.com/vectors/menu/ -->
-            <div id="lines" class="show">
-                <img id="lines-svg" src="./img/menu-svgrepo-com.svg" alt="open menu button">
-            </div>
-        </div>
 
-        <nav id="hamburger-menu" class="hide">
-            <ul>
-                <li class="hamburger-link"><a href="#welcome-text">Home</a></li>
-                <li class="hamburger-link"><a href="#expertise">Expertise</a></li>
-                <li class="hamburger-link"><a href="#my-work">Projects</a></li>
-                <li class="hamburger-link"><a href="#about">About me</a></li>
-                <li class="hamburger-link"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div id="top-bar">
-            <div id="theme-switch">&#10059;</div>
-            <nav id="top-bar-menu">
+            <nav id="hamburger-menu" class="hide">
                 <ul>
-                    <li class="top-bar-menu-link"><a href="#welcome-text">Home</a></li>//
-                    <li class="top-bar-menu-link"><a href="#expertise">Expertise</a></li>//
-                    <li class="top-bar-menu-link"><a href="#my-work">Projects</a></li>//
-                    <li class="top-bar-menu-link"><a href="#about">About</a></li>//
-                    <li class="top-bar-menu-link"><a href="#contact">Contact</a></li>
+                    <li class="hamburger-link"><a href="#welcome-text">Home</a></li>
+                    <li class="hamburger-link"><a href="#expertise">Expertise</a></li>
+                    <li class="hamburger-link"><a href="#my-work">Projects</a></li>
+                    <li class="hamburger-link"><a href="#about">About me</a></li>
+                    <li class="hamburger-link"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        </div>
-    </header>
 
-    <main>
-        <section>
-            <div id="welcome">
-                <img id="welcome-background" src="./img/0-portrait-FINAL-2-2.png" alt="portrait">
-                <div id="welcome-content">
-                    <div id="welcome-text" class="navigation-anchor">
-                        <h1>I am <span class="secondary">Tom</span><br>
-                            <span class="accent">Frontend</span><span class="primary"> Developer</span>
-                        </h1>
-                        <p>Web Design, Web Development, SEO.</p>
-                    </div>
-                </div>
-                
-                <div id="terminal-container"> <!-- class="hide" -->
-                    <div id="terminal-window">
-                        <div id="terminal-header">
-                            <div class="terminal-header__button red"></div>
-                            <div class="terminal-header__button yellow"></div>
-                            <div class="terminal-header__button green"></div>
-                            <div id="terminal-header__title">tulrich -- Terminal</div>
-                        </div>
-                        <div id="terminal-content">
-                            <!-- <div id="last-login"></div> -->
-                            $
-                        </div>
-                    </div>
-                </div>
-
+            <div id="top-bar">
+                <div id="theme-switch">&#10059;</div>
+                <nav id="top-bar-menu">
+                    <ul>
+                        <li class="top-bar-menu-link"><a href="#welcome-text">Home</a></li>//
+                        <li class="top-bar-menu-link"><a href="#expertise">Expertise</a></li>//
+                        <li class="top-bar-menu-link"><a href="#my-work">Projects</a></li>//
+                        <li class="top-bar-menu-link"><a href="#about">About</a></li>//
+                        <li class="top-bar-menu-link"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-        </section>
+        </header>
 
-        <section>
-            <div id="expertise" class="navigation-anchor">
-                <h2>My Expertise</h2>
-                <div id="expertise-boxes">
-                    <div class="expertise-box">
-                        <div class="expertise-header">
-                            <!-- todo: no Inline CSS!!! -->
-                            <svg class="expertise-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm0 2 .001 4H5V5h14zM5 11h8v8H5v-8zm10 8v-8h4.001l.001 8H15z"></path>
-                            </svg>
-                            <h3>Web Design <br>& CMS</h3>
-                        </div>
-                        <div class="expertise-text">
-                            <p>Skilled in HTML, CSS, SASS, Bootstrap. <br>
-                                Mobile-first and friendly responsive Websites <br>Familiarity with software like Adobe Suite, Photoshop</p>
-                            <p>Experience in Wordpress administration and hosting</p>
+        <main>
+            <section>
+                <div id="welcome">
+                    <img id="welcome-background" src="./img/0-portrait-FINAL-2-2.png" alt="portrait">
+                    <div id="welcome-content">
+                        <div id="welcome-text" class="navigation-anchor">
+                            <h1>I am <span class="secondary">Tom</span><br>
+                                <span class="accent">Frontend</span><span class="primary"> Developer</span>
+                            </h1>
+                            <p>Web Design, Web Development, SEO.</p>
                         </div>
                     </div>
 
-                    <div class="expertise-box">
-                        <div class="expertise-header">
-                            <svg class="expertise-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"></path>
-                            </svg>
-                            <h3>Frontend <br> Development</h3>
-                        </div>
-                        <div class="expertise-text">
-                            <p>Skilled in JavaScript, Node.js, React. <br>
-                                APIs & AJAX, asynchronous JavaScript <br>browser testing and debugging</p>
+                    <div id="terminal-container"> <!-- class="hide" -->
+                        <div id="terminal-window">
+                            <div id="terminal-header">
+                                <div class="terminal-header__button red"></div>
+                                <div class="terminal-header__button yellow"></div>
+                                <div class="terminal-header__button green"></div>
+                                <div id="terminal-header__title">tulrich -- Terminal</div>
+                            </div>
+                            <div id="terminal-content">
+                                <!-- <div id="last-login"></div> -->
+                                $
+                            </div>
                         </div>
                     </div>
 
-                    <div class="expertise-box">
-                        <div class="expertise-header">
-                            <svg class="expertise-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M4.626 8.878a7.937 7.937 0 0 1 1.71-2.541 7.92 7.92 0 0 1 2.542-1.71 8.12 8.12 0 0 1 6.13-.041A2.49 2.49 0 0 0 17.5 7C18.886 7 20 5.886 20 4.5S18.886 2 17.5 2c-.689 0-1.312.276-1.763.725-2.431-.973-5.223-.958-7.635.059-1.19.5-2.26 1.22-3.18 2.139A9.98 9.98 0 0 0 2 12h2c0-1.086.211-2.136.626-3.122zm14.747 6.244c-.401.952-.977 1.808-1.71 2.541s-1.589 1.309-2.542 1.71a8.12 8.12 0 0 1-6.13.041A2.488 2.488 0 0 0 6.5 17C5.114 17 4 18.114 4 19.5S5.114 22 6.5 22c.689 0 1.312-.276 1.763-.725A9.973 9.973 0 0 0 12 22a9.983 9.983 0 0 0 9.217-6.102A9.992 9.992 0 0 0 22 12h-2a7.993 7.993 0 0 1-.627 3.122z"></path>
-                                <path d="M12 7.462c-2.502 0-4.538 2.036-4.538 4.538S9.498 16.538 12 16.538c2.502 0 4.538-2.036 4.538-4.538S14.502 7.462 12 7.462z"></path>
-                            </svg>
-                            <h3>Search Engine <br>Opimization</h3>
-                        </div>
-                        <div class="expertise-text">
-                            <p>Skilled in OnPage / OffPage / Technical SEO<br>
-                                Analytics, Research, Crawling & Site Audits, Keyword Research, Link Building <br>
-                                Sistrix, Xovi, Searchmetrics, Screaming Frog, Google Search Console</p>
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div id="my-work" class="navigation-anchor">
-                <h2>My work</h2>
-                <p>This will be a slider showroom of some of my projects I've coded so far.</p>
-
-                <div id="carousel">
-                    <div class="left-arrow-button arrow-button"><img src="./img/angle-left-solid.svg" alt="left-arrow-button"></div>
-
-                    <div id="image-wrapper">
-                        <div class="card">
-                            <img src="img/projects/advice-generator-500px_375px.png" alt="Advice Generator">
-                            <div class="focus-content">
-                                <h3>Advice Generator</h3>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit quisquam delectus, iste numquam omnis. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                                <div class="project-links">
-                                    <div class="project-website">
-                                        <a href="../advice-generator-app-MAIN/index.html" target="_blank">View Site</a>
-                                    </div>
-                                    <div class="github">
-                                        <a href="#" target="_blank">GitHub</a>
-                                    </div>
-                                </div>
+            <section>
+                <div id="expertise" class="navigation-anchor">
+                    <h2>My Expertise</h2>
+                    <div id="expertise-boxes">
+                        <div class="expertise-box">
+                            <div class="expertise-header">
+                                <!-- todo: no Inline CSS!!! -->
+                                <svg class="expertise-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm0 2 .001 4H5V5h14zM5 11h8v8H5v-8zm10 8v-8h4.001l.001 8H15z"></path>
+                                </svg>
+                                <h3>Web Design <br>& CMS</h3>
+                            </div>
+                            <div class="expertise-text">
+                                <p>Skilled in HTML, CSS, SASS, Bootstrap. <br>
+                                    Mobile-first and friendly responsive Websites <br>Familiarity with software like Adobe Suite, Photoshop</p>
+                                <p>Experience in Wordpress administration and hosting</p>
                             </div>
                         </div>
 
-                        <div class="card">
-                            <img src="img/projects/iss-500px_375px.png" alt="ISS">
-                            <div class="focus-content">
-                                <h3>ISS Location</h3>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit quisquam delectus, iste numquam omnis.</p>
-                                </div>
-                                <div class="project-links">
-                                    <div class="project-website">
-                                        <a href="../ISS/index.html" target="_blank">View Site</a>
-                                    </div>
-                                    <div class="github">
-                                        <a href="https://github.com/TomUlrich/ISS-API-and-Leaflet.js" target="_blank">GitHub</a>
-                                    </div>
-                                </div>
+                        <div class="expertise-box">
+                            <div class="expertise-header">
+                                <svg class="expertise-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"></path>
+                                </svg>
+                                <h3>Frontend <br> Development</h3>
+                            </div>
+                            <div class="expertise-text">
+                                <p>Skilled in JavaScript, Node.js, React. <br>
+                                    APIs & AJAX, asynchronous JavaScript <br>browser testing and debugging</p>
                             </div>
                         </div>
 
-                        <div class="card">
-                            <img src="img/projects/stopwatch-500px_375px.png" alt="Stopwatch">
-                            <div class="focus-content">
-                                <h3>Stopwatch</h3>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                                </div>
-                                <div class="project-links">
-                                    <div class="project-website">
-                                        <a href="../stopwatch/index.html" target="_blank">View Site</a>
+                        <div class="expertise-box">
+                            <div class="expertise-header">
+                                <svg class="expertise-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M4.626 8.878a7.937 7.937 0 0 1 1.71-2.541 7.92 7.92 0 0 1 2.542-1.71 8.12 8.12 0 0 1 6.13-.041A2.49 2.49 0 0 0 17.5 7C18.886 7 20 5.886 20 4.5S18.886 2 17.5 2c-.689 0-1.312.276-1.763.725-2.431-.973-5.223-.958-7.635.059-1.19.5-2.26 1.22-3.18 2.139A9.98 9.98 0 0 0 2 12h2c0-1.086.211-2.136.626-3.122zm14.747 6.244c-.401.952-.977 1.808-1.71 2.541s-1.589 1.309-2.542 1.71a8.12 8.12 0 0 1-6.13.041A2.488 2.488 0 0 0 6.5 17C5.114 17 4 18.114 4 19.5S5.114 22 6.5 22c.689 0 1.312-.276 1.763-.725A9.973 9.973 0 0 0 12 22a9.983 9.983 0 0 0 9.217-6.102A9.992 9.992 0 0 0 22 12h-2a7.993 7.993 0 0 1-.627 3.122z"></path>
+                                    <path d="M12 7.462c-2.502 0-4.538 2.036-4.538 4.538S9.498 16.538 12 16.538c2.502 0 4.538-2.036 4.538-4.538S14.502 7.462 12 7.462z"></path>
+                                </svg>
+                                <h3>Search Engine <br>Opimization</h3>
+                            </div>
+                            <div class="expertise-text">
+                                <p>Skilled in OnPage / OffPage / Technical SEO<br>
+                                    Analytics, Research, Crawling & Site Audits, Keyword Research, Link Building <br>
+                                    Sistrix, Xovi, Searchmetrics, Screaming Frog, Google Search Console</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div id="my-work" class="navigation-anchor">
+                    <h2>My work</h2>
+                    <p>This will be a slider showroom of some of my projects I've coded so far.</p>
+
+                    <div id="carousel">
+                        <div class="left-arrow-button arrow-button"><img src="./img/angle-left-solid.svg" alt="left-arrow-button"></div>
+
+                        <div id="image-wrapper">
+                            <div class="card">
+                                <img src="img/projects/advice-generator-500px_375px.png" alt="Advice Generator">
+                                <div class="focus-content">
+                                    <h3>Advice Generator</h3>
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit quisquam delectus, iste numquam omnis. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
-                                    <div class="github">
-                                        <a href="https://github.com/TomUlrich/JavaScript-Stopwatch" target="_blank">GitHub</a>
+                                    <div class="project-links">
+                                        <div class="project-website">
+                                            <a href="../advice-generator-app-MAIN/index.html" target="_blank">View Site</a>
+                                        </div>
+                                        <div class="github">
+                                            <a href="#" target="_blank">GitHub</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="card">
-                            <img src="img/projects/digital_clock-1000px_750px.PNG" alt="Digital Clock">
-                            <div class="focus-content">
-                                <h3>Digital Clock</h3>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit quisquam delectus, iste numquam omnis.</p>
-                                </div>
-                                <div class="project-links">
-                                    <div class="project-website">
-                                        <a href="../digital-clock/index.html" target="_blank">View Site</a>
+                            <div class="card">
+                                <img src="img/projects/iss-500px_375px.png" alt="ISS">
+                                <div class="focus-content">
+                                    <h3>ISS Location</h3>
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit quisquam delectus, iste numquam omnis.</p>
                                     </div>
-                                    <div class="github">
-                                        <a href="#" target="_blank">GitHub</a>
+                                    <div class="project-links">
+                                        <div class="project-website">
+                                            <a href="../ISS/index.html" target="_blank">View Site</a>
+                                        </div>
+                                        <div class="github">
+                                            <a href="https://github.com/TomUlrich/ISS-API-and-Leaflet.js" target="_blank">GitHub</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="card">
+                                <img src="img/projects/stopwatch-500px_375px.png" alt="Stopwatch">
+                                <div class="focus-content">
+                                    <h3>Stopwatch</h3>
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="project-links">
+                                        <div class="project-website">
+                                            <a href="../stopwatch/index.html" target="_blank">View Site</a>
+                                        </div>
+                                        <div class="github">
+                                            <a href="https://github.com/TomUlrich/JavaScript-Stopwatch" target="_blank">GitHub</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="img/projects/digital_clock-1000px_750px.PNG" alt="Digital Clock">
+                                <div class="focus-content">
+                                    <h3>Digital Clock</h3>
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit quisquam delectus, iste numquam omnis.</p>
+                                    </div>
+                                    <div class="project-links">
+                                        <div class="project-website">
+                                            <a href="../digital-clock/index.html" target="_blank">View Site</a>
+                                        </div>
+                                        <div class="github">
+                                            <a href="#" target="_blank">GitHub</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right-arrow-button arrow-button"><img src="./img/angle-right-solid.svg" alt="right-arrow-button"></div>
                         </div>
-
-                        <div class="right-arrow-button arrow-button"><img src="./img/angle-right-solid.svg" alt="right-arrow-button"></div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div id="about" class="navigation-anchor">
-                <h2>About me</h2>
-                <p>This I tell some short facts about who I am, my professional background, what I am working on and what I like.</p>
-            </div>
-        </section>
+            <section>
+                <div id="about" class="navigation-anchor">
+                    <h2>About me</h2>
+                    <p>This I tell some short facts about who I am, my professional background, what I am working on and what I like.</p>
+                </div>
+            </section>
 
-        <section>
-            <div id="contact" class="navigation-anchor">
-                <h2>Contact</h2>
-                <div id="quick-links">
-                    <div id="quick-links-text">
-                        <p>Follow me</p>
+            <section>
+                <div id="contact" class="navigation-anchor">
+                    <h2>Contact</h2>
+                    <div id="quick-links">
+                        <div id="quick-links-text">
+                            <p>Follow me</p>
+                        </div>
+                        <div class="quick-link">
+                            <a href="https://github.com/TomUlrich" target="_blank" rel="noopener noreferrer"><img src="./img/logos/github-mark.svg" alt="github-logo"></a>
+                        </div>
+                        <div class="quick-link">
+                            <a href="https://www.linkedin.com/in/thulrich/" target="_blank" rel="noopener noreferrer"><img src="./img/logos/icons8-linkedin-24.svg" alt="linkedin-logo"></a>
+                        </div>
+                        <div class="quick-link">
+                            <a href="https://www.codewars.com/users/tomUlrich" target="_blank" rel="noopener noreferrer"><img src="./img/logos/codewars-logo-black.svg" alt="codewars-logo"></a>
+                        </div>
                     </div>
-                    <div class="quick-link">
-                        <a href="https://github.com/TomUlrich" target="_blank" rel="noopener noreferrer"><img src="./img/logos/github-mark.svg" alt="github-logo"></a>
-                    </div>
-                    <div class="quick-link">
-                        <a href="https://www.linkedin.com/in/thulrich/" target="_blank" rel="noopener noreferrer"><img src="./img/logos/icons8-linkedin-24.svg" alt="linkedin-logo"></a>
-                    </div>
-                    <div class="quick-link">
-                        <a href="https://www.codewars.com/users/tomUlrich" target="_blank" rel="noopener noreferrer"><img src="./img/logos/codewars-logo-black.svg" alt="codewars-logo"></a>
+
+                    <div class="contact-form-wrapper">
+                        <form action="https://formsubmit.co/0c073b04af7fd1355777912dc58d0d85" method="POST">
+
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="8" required></textarea>
+
+                            <!-- todo: button disabled: enable button after Datenschutz, Imprint etc. -->
+                            <button type="submit" class="btn" disabled>Send email</button>
+
+                            <input type="hidden" name="_next" value="https://tomulrich.github.io/thanks.html">
+                        </form>
                     </div>
                 </div>
+            </section>
+        </main>
 
-                <div class="contact-form-wrapper">
-                    <form action="https://formsubmit.co/0c073b04af7fd1355777912dc58d0d85" method="POST">
-
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="8" required></textarea>
-
-                        <!-- todo: button disabled: enable button after Datenschutz, Imprint etc. -->
-                        <button type="submit" class="btn" disabled>Send email</button>
-
-                        <input type="hidden" name="_next" value="https://tomulrich.github.io/thanks.html">
-                    </form>
-                </div>
+        <footer>
+            <div id="data-protection">
+                <a href="./data-protection.html">Data protection</a>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div id="imprint">
-            <a href="./imprint.html">Imprint</a>
-        </div>
-        <div id="data-protection">
-            <a href="./data-protection.html">Data protection</a>
-        </div>
-    </footer>
-</div>
+            <div id="imprint">
+                <a href="./imprint.html">Imprint</a>
+            </div>
+            <div id="footer-background">
+                <img src="./img/berlin-skyline.svg" alt="berlin skyline">
+            </div>
+        </footer>
+    </div>
 
 </body>
 

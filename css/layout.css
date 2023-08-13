@@ -134,58 +134,23 @@ header {
 #hamburger-button {
   position: fixed;
   z-index: 18;
-  top: 8px;
-  right: 8px;
+  top: 12px;
+  right: 12px;
 
-  height: 1.8rem;
-  width: 1.8rem;
-  border: none;
-  border-radius: 1px;
+  /* height: 1.8rem;
+  width: 1.8rem; */
+  /* border: none;
+  border-radius: 1px; */
   cursor: pointer;
   /* background-color: var(--white); */
 }
 
-/* todo: https://www.svgrepo.com/vectors/cross/ */
-/*
-  #cross {
- font-size: 1.8rem;
-  justify-content: center;
-  align-items: center; 
-
-}
-*/
-
-#cross-svg {
-  /* background-color: red; */
-  height: 2rem;
-  width: 2rem;
-  filter: var(--svg-to-text-color);
-}
-
+#cross-svg,
 #lines-svg {
   height: 2rem;
   width: 2rem;
   filter: var(--svg-to-text-color);
 }
-
-/* 
-#lines {
-padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px; 
-}
-*/
-
-/* 
-.line {
-  height: 2px;
-  width: 22px;
-  background-color: var(--black);
-} 
-*/
 
 #hamburger-menu {
   z-index: 17;
@@ -460,11 +425,31 @@ label {
 
 /* --------- Footer --------- */
 
-footer {
-  background: url(../img/berlin-skyline.svg) no-repeat;
-  background-position: 0% 100%;
-  background-size: 100vw;
-  height: 600px; /* widescreen */
+footer{
+  position: relative;
+  margin-top: 20rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  background-color: var(--text-color);
+
+}
+
+#footer-background{
+  position: absolute;
+  left: 0;
+  right:0;
+  bottom: 4rem;
+  z-index: -999;
+  overflow: hidden;
+}
+
+#footer-background img {
+  width: 100vw;
+  filter: var(--svg-to-text-color);
+
 }
 
 /* _________ Helper Classes ____________ */
