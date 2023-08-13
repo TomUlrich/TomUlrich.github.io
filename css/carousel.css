@@ -1,5 +1,6 @@
 /*  # variables */
 :root {
+  /* --carousel-image--width: 100vw; */
   --carousel-image--width: 500px;
   --carousel-image--height: 375px;
   --carousel__arrow-button--height: 48px;
@@ -57,6 +58,8 @@
 
 .card {
   width: var(--carousel-image--width);
+  /* width: 100vw; */
+
   height: var(--carousel-image--height);
   /* border-radius: 16px; */
   background-color: aliceblue;

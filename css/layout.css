@@ -157,19 +157,32 @@ header {
 
 }
 
+#cross-svg{
+  /* background-color: red; */
+  height: 2rem;
+  width: 2rem;
+  filter: var(--svg-to-text-color);
+}
+
 #lines {
-  padding-top: 10px;
+  /* padding-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 5px; */
+
 }
 
+#open-menu-btn{
+  height: 2rem;
+  width: 2rem;
+  filter: var(--svg-to-text-color);
+}
 .line {
-  height: 2px;
+  /* height: 2px;
   width: 22px;
-  background-color: var(--black);
+  background-color: var(--black); */
 }
 
 #hamburger-menu {
@@ -357,9 +370,18 @@ header {
 
 /* --------- Expertise --------- */
 
+#expertise {
+  display: flex;
+  flex-direction: column;
+  /* justify-content:center; */
+}
+
 #expertise-boxes {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content:center;
+  gap: 2rem;
 }
 
 .expertise-box {
@@ -389,6 +411,12 @@ header {
 
 .expertise-text {
   padding: 24px 0 0 24px;
+}
+
+/* --------- Projects --------- */
+
+#image-wrapper{
+
 }
 
 /* --------- Contact --------- */
@@ -446,7 +474,7 @@ footer {
 /* _________ Helper Classes ____________ */
 
 .navigation-anchor {
-  /* padding-top: 5rem; */
+  padding-top: 5rem;
 }
 
 .show {

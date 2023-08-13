@@ -17,6 +17,7 @@
     --info-color: #7FDBFF;
     --border-color: #555555;
     --disabled-color: #777777;
+    --svg-to-text-color: invert(97%) sepia(4%) saturate(2%) hue-rotate(336deg) brightness(95%) contrast(106%);
   }
   
   #theme-switch {

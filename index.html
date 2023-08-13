@@ -20,20 +20,24 @@
 </head>
 
 <body>
+    <div class="wrapper">
+
     <div id="overlay" class="hide"></div>
+
     <header>
-        
         <div id="hamburger-button">
             <!-- todo: https://www.svgrepo.com/vectors/cross/ -->
             <div id="cross" class="hide">
-                &#128937;
+                <!-- &#128937; -->
+                <img id="cross-svg" src="./img/cross-svgrepo-com.svg" alt="close menu button">
             </div>
             <!-- todo: https://www.svgrepo.com/vectors/menu/ -->
             <div id="lines" class="show">
                 <!-- &#9776; -->
+                <!-- <div class="line"></div>
                 <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+                <div class="line"></div> -->
+                <img id="open-menu-btn" src="./img/menu-svgrepo-com.svg" alt="open menu button">
             </div>
         </div>
 
@@ -144,14 +148,13 @@
 
         <section>
             <div id="my-work" class="navigation-anchor">
-                <h2>projects showroom</h2>
+                <h2>My work</h2>
                 <p>This will be a slider showroom of some of my projects I've coded so far.</p>
 
                 <div id="carousel">
                     <div class="left-arrow-button arrow-button"><img src="./img/angle-left-solid.svg" alt="left-arrow-button"></div>
 
                     <div id="image-wrapper">
-
                         <div class="card">
                             <img src="img/projects/advice-generator-500px_375px.png" alt="Advice Generator">
                             <div class="focus-content">
@@ -285,6 +288,8 @@
             <a href="./data-protection.html">Data protection</a>
         </div>
     </footer>
+</div>
+
 </body>
 
 </html>
