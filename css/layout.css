@@ -105,8 +105,6 @@ body {
   line-height: 1.2;
   color: var(--text-color);
   background-color: var(--background-color);
-
-
 }
 
 header {
@@ -114,7 +112,6 @@ header {
   top: 0;
   z-index: 9999;
   width: 100vw;
-
 }
 
 /* --------- Hamburger Nav --------- */
@@ -131,7 +128,6 @@ header {
   background: var(--background-color);
   opacity: 0.98;
   z-index: 15;
-
 }
 
 /* todo: https://www.svgrepo.com/vectors/menu/ */
@@ -140,50 +136,56 @@ header {
   z-index: 18;
   top: 8px;
   right: 8px;
+
   height: 1.8rem;
   width: 1.8rem;
   border: none;
   border-radius: 1px;
   cursor: pointer;
   /* background-color: var(--white); */
-
 }
 
 /* todo: https://www.svgrepo.com/vectors/cross/ */
-#cross {
-  font-size: 1.8rem;
+/*
+  #cross {
+ font-size: 1.8rem;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
 
 }
+*/
 
-#cross-svg{
+#cross-svg {
   /* background-color: red; */
   height: 2rem;
   width: 2rem;
   filter: var(--svg-to-text-color);
 }
 
-#lines {
-  /* padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px; */
-
-}
-
-#open-menu-btn{
+#lines-svg {
   height: 2rem;
   width: 2rem;
   filter: var(--svg-to-text-color);
 }
-.line {
-  /* height: 2px;
-  width: 22px;
-  background-color: var(--black); */
+
+/* 
+#lines {
+padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; 
 }
+*/
+
+/* 
+.line {
+  height: 2px;
+  width: 22px;
+  background-color: var(--black);
+} 
+*/
 
 #hamburger-menu {
   z-index: 17;
@@ -197,7 +199,6 @@ header {
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.5rem;
-
 }
 
 #hamburger-menu li {
@@ -207,7 +208,6 @@ header {
 }
 
 #hamburger-menu a {
-
   color: var(--text-color);
 }
 
@@ -223,7 +223,6 @@ header {
   background-color: var(--background-color);
   color: var(--text-color);
   opacity: 0.8;
-
 }
 
 /* todo: restyle to iOS switch, place it elsewhere */
@@ -235,7 +234,6 @@ header {
 
 #top-bar-menu {
   margin: 0 auto;
-
 }
 
 #top-bar-menu ul {
@@ -274,7 +272,6 @@ header {
   top: 0;
   opacity: 0%;
   animation-duration: 2s;
-
 }
 
 /* typewriter.js: welcomeBackground.style.animationName = 'portrait-opacity'; */
@@ -380,7 +377,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -415,8 +412,7 @@ header {
 
 /* --------- Projects --------- */
 
-#image-wrapper{
-
+#image-wrapper {
 }
 
 /* --------- Contact --------- */
