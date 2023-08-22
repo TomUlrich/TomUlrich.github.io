@@ -95,9 +95,9 @@ a:hover {
 
 /* _________ Layout ____________ */
 
-/* html{
-  width: 100vw;
-} */
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Outfit', sans-serif;
