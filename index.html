@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas Ulrich | Web Development</title>
     <!-- Stylesheets -->
-    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/layout.css">
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="stylesheet" href="./css/carousel.css"> -->
-    <link rel="stylesheet" href="./cards/style.css">
+    <!-- <link rel="stylesheet" href="./cards/style.css"> -->
     <link rel="stylesheet" href="./css/light-theme.css" id="theme-link">
     <!-- JavaScript -->
     <script defer src="./js/app.js"></script>
@@ -49,10 +49,10 @@
                 <div id="theme-switch">&#10059;</div>
                 <nav id="top-bar-menu">
                     <ul>
-                        <li class="top-bar-menu-link"><a href="#welcome-text">Home</a></li>//
-                        <li class="top-bar-menu-link"><a href="#expertise">Expertise</a></li>//
-                        <li class="top-bar-menu-link"><a href="#my-work">Projects</a></li>//
-                        <li class="top-bar-menu-link"><a href="#about">About</a></li>//
+                        <li class="top-bar-menu-link"><a href="#welcome-text">Home</a></li>
+                        <li class="top-bar-menu-link"><a href="#expertise">Expertise</a></li>
+                        <li class="top-bar-menu-link"><a href="#my-work">Projects</a></li>
+                        <li class="top-bar-menu-link"><a href="#about">About</a></li>
                         <li class="top-bar-menu-link"><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -230,14 +230,14 @@
                             <img class="card-image" src="./cards/img/projects/iss-1200x800.PNG" alt="test-img">
                             <div class="card-overlay">
                                 <div class="overlay__text">
-                                    <h3 class="project-title">Card #1</h3>
-                                    <p>A description of the project or whatever</p>
+                                    <h3 class="project-title">ISS Localizer</h3>
+                                    <p>Shows the current position of the International Space Station in real-time.</p>
                                 </div>
                                 <div class="tag-container">
                                     <div class="tag">JavaScript</div>
                                     <div class="tag">API</div>
-                                    <div class="tag">Sass</div>
-                                    <div class="tag">HTML & CSS</div>
+                                    <div class="tag">Leaflet</div>
+                                    <div class="tag">OpenStreetMap</div>
                                 </div>
                                 <!-- todo: .card-links: Project / GitHub -->
                                 <div class="project-links">
@@ -246,20 +246,21 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <!-- Card #2 -->
                         <div class="card-container">
                             <img class="card-image" src="./cards/img/projects/surface-temperature-1200x800.png" alt="test-img">
                             <div class="card-overlay">
                                 <div class="overlay__text">
-                                    <h3 class="project-title">Card #1</h3>
-                                    <p>A description of the project or whatever</p>
+                                    <h3 class="project-title">Global Temperature Chart</h3>
+                                    <p>Visualizing CSV data using Chart.js.</p>
+                                    <p>Line chart is showing the progression of global surface temperatures from 1880 to present.</p>
                                 </div>
                                 <div class="tag-container">
                                     <div class="tag">JavaScript</div>
                                     <div class="tag">API</div>
-                                    <div class="tag">Sass</div>
-                                    <div class="tag">HTML & CSS</div>
+                                    <div class="tag">Canvas</div>
+                                    <div class="tag">Chart.js</div>
                                 </div>
                                 <!-- todo: .card-links: Project / GitHub -->
                                 <div class="project-links">
@@ -268,20 +269,20 @@
                                 </div>
                             </div>
                         </div>
-    
-    
+
+
                         <!-- Card #3 -->
                         <div class="card-container">
                             <img class="card-image" src="./cards/img/projects/advice-generator-1200x800.png" alt="test-img">
                             <div class="card-overlay">
                                 <div class="overlay__text">
-                                    <h3 class="project-title">Card #1</h3>
-                                    <p>A description of the project or whatever</p>
+                                    <h3 class="project-title">Advice Generator</h3>
+                                    <p>Generates a new piece of advice when clicking the dice icon.</p>
                                 </div>
                                 <div class="tag-container">
                                     <div class="tag">JavaScript</div>
-                                    <div class="tag">API</div>
-                                    <div class="tag">Sass</div>
+                                    <div class="tag">3rd party API</div>
+                                    <div class="tag">fetch API</div>
                                     <div class="tag">HTML & CSS</div>
                                 </div>
                                 <!-- todo: .card-links: Project / GitHub -->
@@ -291,19 +292,17 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <!-- Card #4 -->
                         <div class="card-container">
                             <img class="card-image" src="./cards/img/projects/rock-paper-scissors-1200x800.PNG" alt="test-img">
                             <div class="card-overlay">
                                 <div class="overlay__text">
-                                    <h3 class="project-title">Card #1</h3>
-                                    <p>A description of the project or whatever</p>
+                                    <h3 class="project-title">Rock, Paper, Scissors</h3>
+                                    <p>A Rock, Paper, Scissors game.</p>
                                 </div>
                                 <div class="tag-container">
                                     <div class="tag">JavaScript</div>
-                                    <div class="tag">API</div>
-                                    <div class="tag">Sass</div>
                                     <div class="tag">HTML & CSS</div>
                                 </div>
                                 <!-- todo: .card-links: Project / GitHub -->
@@ -313,19 +312,18 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <!-- Card #5 -->
                         <div class="card-container">
-                            <img class="card-image" src="./cards/img/projects/stopwatch-500px_375px.png" alt="test-img">
+                            <img class="card-image" src="./cards/img/projects/stopwatch-1200x800.png" alt="test-img">
                             <div class="card-overlay">
                                 <div class="overlay__text">
-                                    <h3 class="project-title">Card #1</h3>
-                                    <p>A description of the project or whatever. A description of the project or whatever</p>
+                                    <h3 class="project-title">Stopwatch</h3>
+                                    <p>A stopwatch.</p>
+                                    <p>Start. Stop. Reset.</p>
                                 </div>
                                 <div class="tag-container">
                                     <div class="tag">JavaScript</div>
-                                    <div class="tag">API</div>
-                                    <div class="tag">Sass</div>
                                     <div class="tag">HTML & CSS</div>
                                 </div>
                                 <!-- todo: .card-links: Project / GitHub -->
@@ -335,19 +333,17 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <!-- Card #6 -->
                         <div class="card-container">
-                            <img class="card-image" src="./cards/img/projects/digital_clock-1000px_750px.PNG" alt="test-img">
+                            <img class="card-image" src="./cards/img/projects/digital_clock-1200x800.png" alt="test-img">
                             <div class="card-overlay">
                                 <div class="overlay__text">
-                                    <h3 class="project-title">Card #1</h3>
-                                    <p>A description</p>
+                                    <h3 class="project-title">Digital Clock</h3>
+                                    <p>A simple digital clock.</p>
                                 </div>
                                 <div class="tag-container">
                                     <div class="tag">JavaScript</div>
-                                    <div class="tag">API</div>
-                                    <div class="tag">Sass</div>
                                     <div class="tag">HTML & CSS</div>
                                 </div>
                                 <!-- todo: .card-links: Project / GitHub -->

@@ -7,6 +7,12 @@
   src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
 
+:root {
+  --border-radius: 4px;
+  --overlay__background-color: #000000;
+  --overlay__background-color--blurred: #000000bb;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -377,8 +383,130 @@ header {
 
 /* --------- Projects --------- */
 
-#image-wrapper {
+#cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  row-gap: 3rem;
+  column-gap: 1.3rem;
+  flex-wrap: wrap;
 }
+
+/**********************/
+/*** Card Container ***/
+/**********************/
+
+.card-container {
+  position: relative;
+  color: var(--white);
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  /* todo: set different widths/heights */
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px;
+  color: var(--white);
+}
+
+.card-container:hover .card-overlay {
+  /* todo: for onclick: */
+  cursor: pointer;
+}
+
+.card-container:hover .card-overlay {
+  /* todo: for onclick: */
+  /* cursor:default; */
+  /* fade-in layer: */
+  height: 100%;
+  justify-content: center;
+  background-color: var(--overlay__background-color--blurred);
+}
+
+.card-container:hover img {
+  opacity: 0.4;
+  filter: grayscale(80%);
+  transition: 0.3s ease-in;
+}
+
+.card-container:hover h3 {
+  font-size: 1.4rem;
+}
+
+/*** card image ***/
+
+/* todo: srcset: New images with static widths & heights */
+.card-image {
+  width: 100%;
+  /* todo: set height to .card-overlay height (15%) */
+  /* height: auto; */
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  /* object-fit: cover; */
+}
+
+/*** Card Overlay ***/
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items:center;
+
+  transition: 300ms ease;
+  /* todo ** Set hight to margin in .overlay__text > h3: ***/
+  height: 3rem;
+  width: 100%;
+  padding: 0 2rem;
+  overflow: hidden;
+
+  /* border-radius: var(--border-radius) var(--border-radius); */
+  /* background-color: var(--overlay__background-color--blurred);  */
+  background-color: var(--overlay__background-color);
+  /* color: var(--white); */
+}
+
+/*** card-text  ***/
+
+.overlay__text {
+  margin: 0 2.4rem;
+}
+
+.project-title {
+  /*** set margin to height in .card-overlay  ***/
+  margin: 0.8rem 0 1.5rem 0;
+  color: var(--white);
+  font-size: 1.4rem;
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 1rem 0rem;
+}
+
+.tag {
+  border: 2px solid var(--white);
+  border-radius: 12px;
+  padding: 2px 8px;
+  background-color: var(--info-color);
+  font-size: 0.8rem;
+}
+
+.project-links {
+  margin-top: 1.5rem;
+}
+.project-links a {
+  margin: 0 2rem;
+  color: var(--default-link-color);
+}
+
 
 /* --------- Contact --------- */
 
