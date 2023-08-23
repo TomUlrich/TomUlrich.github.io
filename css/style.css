@@ -43,16 +43,16 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  /* margin-bottom: 1rem;
+  margin-top: 2rem; */
 }
 
 h3,
 h4,
 h5 {
   font-size: 2rem;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  /* margin-bottom: 1rem;
+  margin-top: 2rem; */
 }
 
 /* --------- Hyperlinks ----------- */
@@ -400,48 +400,14 @@ header {
   position: relative;
   color: var(--white);
   background-color: var(--background-color);
+  border: 1px solid var(--background-color);
   border-radius: var(--border-radius);
   /* todo: set different widths/heights */
-  width: 450px;
-  height: 300px;
+  max-width: 450px;
+  max-height: 300px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px;
   color: var(--white);
-}
-
-.card-container:hover .card-overlay {
-  /* todo: for onclick: */
-  cursor: pointer;
-}
-
-.card-container:hover .card-overlay {
-  /* todo: for onclick: */
-  /* cursor:default; */
-  /* fade-in layer: */
-  height: 100%;
-  justify-content: center;
-  background-color: var(--overlay__background-color--blurred);
-}
-
-.card-container:hover img {
-  opacity: 0.4;
-  filter: grayscale(80%);
-  transition: 0.3s ease-in;
-}
-
-.card-container:hover h3 {
-  font-size: 1.4rem;
-}
-
-/*** card image ***/
-
-/* todo: srcset: New images with static widths & heights */
-.card-image {
-  width: 100%;
-  /* todo: set height to .card-overlay height (15%) */
-  /* height: auto; */
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  /* object-fit: cover; */
 }
 
 /*** Card Overlay ***/
@@ -462,6 +428,7 @@ header {
   height: 3rem;
   width: 100%;
   padding: 0 2rem;
+
   overflow: hidden;
 
   /* border-radius: var(--border-radius) var(--border-radius); */
@@ -470,14 +437,66 @@ header {
   /* color: var(--white); */
 }
 
+.card-container:hover .card-overlay {
+  /* todo: for onclick: */
+  cursor: pointer;
+}
+
+.card-container:hover .card-overlay {
+  /* todo: for onclick: */
+  /* cursor:default; */
+  /* fade-in layer: */
+  height: 100%;
+  /* justify-content: center; */
+  justify-content: flex-end;
+  padding-top:2rem;
+  background-color: var(--overlay__background-color--blurred);
+  align-items: center;
+  padding: 2rem 2.6rem;
+}
+
+.card-container img {
+overflow: hidden;
+border-radius: var(--border-radius);
+}
+
+.card-container:hover img {
+  opacity: 0.4;
+  filter: grayscale(80%);
+  transition: 0.3s ease-in;
+}
+
+.card-container:hover h3 {
+  font-size: 1.8rem;
+}
+
+/* .card-container:hover .project-links a{
+  display: flex;
+  flex-direction: row;
+justify-content: space-around;
+} */
+
+/*** card image ***/
+
+/* todo: srcset: New images with static widths & heights */
+.card-image {
+  width: 100%;
+  /* todo: set height to .card-overlay height (15%) */
+  /* height: auto; */
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  /* object-fit: cover; */
+}
+
+
+
 /*** card-text  ***/
 
 .overlay__text {
-  margin: 0 2.4rem;
+  /* margin: 0 2.4rem; */
 }
 
 .project-title {
-  /*** set margin to height in .card-overlay  ***/
+  /*** set margin to .card-overlay-height  ***/
   margin: 0.8rem 0 1.5rem 0;
   color: var(--white);
   font-size: 1.4rem;
@@ -487,7 +506,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
   margin: 1rem 0rem;
 }
 
@@ -502,9 +521,12 @@ header {
 .project-links {
   margin-top: 1.5rem;
 }
+
 .project-links a {
-  margin: 0 2rem;
+  margin: 0 4rem;
   color: var(--default-link-color);
+  /* justify-content: space-around; */
+
 }
 
 
