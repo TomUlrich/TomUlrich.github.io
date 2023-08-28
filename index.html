@@ -9,13 +9,11 @@
     <!-- Stylesheets -->
     <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="./css/carousel.css"> -->
-    <!-- <link rel="stylesheet" href="./cards/style.css"> -->
     <link rel="stylesheet" href="./css/light-theme.css" id="theme-link">
     <!-- JavaScript -->
     <script defer src="./js/app.js"></script>
     <script defer src="./js/typewriter.js"></script>
-    <script defer src="./js/carousel.js"></script>
+    <script defer src="./js/slider.js"></script>
     <script defer src="./js/dark-theme.js"></script>
 
 </head>
@@ -144,215 +142,142 @@
                 <div id="my-work" class="navigation-anchor">
                     <h2>My work</h2>
 
-                    <!-- <div id="carousel">
-                        <div class="left-arrow-button arrow-button"><img src="./img/angle-left-solid.svg" alt="left-arrow-button"></div>
+                    <div id="responsive-wrapper">
+                        <img src="./img/angle-left-solid.svg" alt="" class="left-arrow-button arrow-button">
 
-                        <div id="image-wrapper">
-                            <div class="card">
-                                <img src="img/projects/advice-generator-500px_375px.png" alt="Advice Generator">
-                                <div class="focus-content">
-                                    <h3>Advice Generator</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit quisquam delectus, iste numquam omnis. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-                                    <div class="project-links">
-                                        <div class="project-website">
-                                            <a href="../advice-generator-app-MAIN/index.html" target="_blank">View Site</a>
-                                        </div>
-                                        <div class="github">
-                                            <a href="#" target="_blank">GitHub</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="card">
-                                <img src="img/projects/iss-500px_375px.png" alt="ISS">
-                                <div class="focus-content">
-                                    <h3>ISS Location</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit quisquam delectus, iste numquam omnis.</p>
+                        <div id="cards-wrapper">
+
+                            <!-- Card #1 -->
+                            <div class="card-container">
+                                <img class="card-image" src="./img/projects/iss-1200x800.PNG" alt="test-img">
+                                <div class="card-overlay">
+                                    <h3 class="card-title">ISS Localizer</h3>
+                                    <div class="card-description">
+                                        <p>Shows the current position of the International Space Station in real-time.</p>
                                     </div>
-                                    <div class="project-links">
-                                        <div class="project-website">
-                                            <a href="../ISS/index.html" target="_blank">View Site</a>
-                                        </div>
-                                        <div class="github">
-                                            <a href="https://github.com/TomUlrich/ISS-API-and-Leaflet.js" target="_blank">GitHub</a>
-                                        </div>
+                                    <div class="tag-container">
+                                        <div class="tag">JavaScript</div>
+                                        <div class="tag">API</div>
+                                        <div class="tag">Leaflet</div>
+                                        <div class="tag">OpenStreetMap</div>
+                                    </div>
+                                    <!-- todo: .card-links: Project / GitHub -->
+                                    <div class="hyperlinks-container">
+                                        <a href="#">GitHub</a>
+                                        <a href="#">Project</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="card">
-                                <img src="img/projects/stopwatch-500px_375px.png" alt="Stopwatch">
-                                <div class="focus-content">
-                                    <h3>Stopwatch</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <!-- Card #2 -->
+                            <div class="card-container">
+                                <img class="card-image" src="./img/projects/surface-temperature-1200x800.png" alt="test-img">
+                                <div class="card-overlay">
+                                    <h3 class="card-title">Global Temperature Chart</h3>
+                                    <div class="card-description">
+                                        <p>Visualizing CSV data using Chart.js.</p>
+                                        <p>Line chart is showing the progression of global surface temperatures from 1880 to present.</p>
                                     </div>
-                                    <div class="project-links">
-                                        <div class="project-website">
-                                            <a href="../stopwatch/index.html" target="_blank">View Site</a>
-                                        </div>
-                                        <div class="github">
-                                            <a href="https://github.com/TomUlrich/JavaScript-Stopwatch" target="_blank">GitHub</a>
-                                        </div>
+                                    <div class="tag-container">
+                                        <div class="tag">JavaScript</div>
+                                        <div class="tag">API</div>
+                                        <div class="tag">Canvas</div>
+                                        <div class="tag">Chart.js</div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <img src="img/projects/digital_clock-1000px_750px.PNG" alt="Digital Clock">
-                                <div class="focus-content">
-                                    <h3>Digital Clock</h3>
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit quisquam delectus, iste numquam omnis.</p>
-                                    </div>
-                                    <div class="project-links">
-                                        <div class="project-website">
-                                            <a href="../digital-clock/index.html" target="_blank">View Site</a>
-                                        </div>
-                                        <div class="github">
-                                            <a href="#" target="_blank">GitHub</a>
-                                        </div>
+                                    <!-- todo: .card-links: Project / GitHub -->
+                                    <div class="hyperlinks-container">
+                                        <a href="#">GitHub</a>
+                                        <a href="#">Project</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="right-arrow-button arrow-button"><img src="./img/angle-right-solid.svg" alt="right-arrow-button"></div>
-                        </div>
-                    </div> -->
-                    <div id="cards-wrapper">
 
-                        <!-- Card #1 -->
-                        <div class="card-container">
-                            <img class="card-image" src="./cards/img/projects/iss-1200x800.PNG" alt="test-img">
-                            <div class="card-overlay">
-                                <h3 class="project-title">ISS Localizer</h3>
-                                <div class="project-description">
-                                    <p>Shows the current position of the International Space Station in real-time.</p>
-                                </div>
-                                <div class="tag-container">
-                                    <div class="tag">JavaScript</div>
-                                    <div class="tag">API</div>
-                                    <div class="tag">Leaflet</div>
-                                    <div class="tag">OpenStreetMap</div>
-                                </div>
-                                <!-- todo: .card-links: Project / GitHub -->
-                                <div class="project-links">
-                                    <a href="#">GitHub</a>
-                                    <a href="#">Project</a>
+                            <!-- Card #3 -->
+                            <div class="card-container">
+                                <img class="card-image" src="./img/projects/advice-generator-1200x800.png" alt="test-img">
+                                <div class="card-overlay">
+                                    <h3 class="card-title">Advice Generator</h3>
+                                    <div class="card-description">
+                                        <p>Generates a new piece of advice when clicking the dice icon.</p>
+                                    </div>
+                                    <div class="tag-container">
+                                        <div class="tag">JavaScript</div>
+                                        <div class="tag">3rd party API</div>
+                                        <div class="tag">fetch API</div>
+                                        <div class="tag">HTML & CSS</div>
+                                    </div>
+                                    <!-- todo: .card-links: Project / GitHub -->
+                                    <div class="hyperlinks-container">
+                                        <a href="#">GitHub</a>
+                                        <a href="#">Project</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Card #2 -->
-                        <div class="card-container">
-                            <img class="card-image" src="./cards/img/projects/surface-temperature-1200x800.png" alt="test-img">
-                            <div class="card-overlay">
-                                <h3 class="project-title">Global Temperature Chart</h3>
-                                <div class="project-description">
-                                    <p>Visualizing CSV data using Chart.js.</p>
-                                    <p>Line chart is showing the progression of global surface temperatures from 1880 to present.</p>
-                                </div>
-                                <div class="tag-container">
-                                    <div class="tag">JavaScript</div>
-                                    <div class="tag">API</div>
-                                    <div class="tag">Canvas</div>
-                                    <div class="tag">Chart.js</div>
-                                </div>
-                                <!-- todo: .card-links: Project / GitHub -->
-                                <div class="project-links">
-                                    <a href="#">GitHub</a>
-                                    <a href="#">Project</a>
+                            <!-- Card #4 -->
+                            <div class="card-container">
+                                <img class="card-image" src="./img/projects/rock-paper-scissors-1200x800.PNG" alt="test-img">
+                                <div class="card-overlay">
+                                    <h3 class="card-title">Rock, Paper, Scissors</h3>
+                                    <div class="card-description">
+                                        <p>A Rock, Paper, Scissors game.</p>
+                                    </div>
+                                    <div class="tag-container">
+                                        <div class="tag">JavaScript</div>
+                                        <div class="tag">HTML & CSS</div>
+                                    </div>
+                                    <!-- todo: .card-links: Project / GitHub -->
+                                    <div class="hyperlinks-container">
+                                        <a href="#">GitHub</a>
+                                        <a href="#">Project</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
+                            <!-- Card #5 -->
+                            <div class="card-container">
+                                <img class="card-image" src="./img/projects/stopwatch-1200x800.png" alt="test-img">
+                                <div class="card-overlay">
+                                    <h3 class="card-title">Stopwatch</h3>
+                                    <div class="card-description">
+                                        <p>A stopwatch.</p>
+                                        <p>Start. Stop. Reset.</p>
+                                    </div>
+                                    <div class="tag-container">
+                                        <div class="tag">JavaScript</div>
+                                        <div class="tag">HTML & CSS</div>
+                                    </div>
+                                    <!-- todo: .card-links: Project / GitHub -->
+                                    <div class="hyperlinks-container">
+                                        <a href="#">GitHub</a>
+                                        <a href="#">Project</a>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <!-- Card #3 -->
-                        <div class="card-container">
-                            <img class="card-image" src="./cards/img/projects/advice-generator-1200x800.png" alt="test-img">
-                            <div class="card-overlay">
-                                <h3 class="project-title">Advice Generator</h3>
-                                <div class="project-description">
-                                    <p>Generates a new piece of advice when clicking the dice icon.</p>
-                                </div>
-                                <div class="tag-container">
-                                    <div class="tag">JavaScript</div>
-                                    <div class="tag">3rd party API</div>
-                                    <div class="tag">fetch API</div>
-                                    <div class="tag">HTML & CSS</div>
-                                </div>
-                                <!-- todo: .card-links: Project / GitHub -->
-                                <div class="project-links">
-                                    <a href="#">GitHub</a>
-                                    <a href="#">Project</a>
+                            <!-- Card #6 -->
+                            <div class="card-container">
+                                <img class="card-image" src="./img/projects/digital-clock-1200x800.png" alt="test-img">
+                                <div class="card-overlay">
+                                    <h3 class="card-title">Digital Clock</h3>
+                                    <div class="card-description">
+                                        <p>A simple digital clock.</p>
+                                    </div>
+                                    <div class="tag-container">
+                                        <div class="tag">JavaScript</div>
+                                        <div class="tag">HTML & CSS</div>
+                                    </div>
+                                    <!-- todo: .card-links: Project / GitHub -->
+                                    <div class="hyperlinks-container">
+                                        <a href="#">GitHub</a>
+                                        <a href="#">Project</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Card #4 -->
-                        <div class="card-container">
-                            <img class="card-image" src="./cards/img/projects/rock-paper-scissors-1200x800.PNG" alt="test-img">
-                            <div class="card-overlay">
-                                <h3 class="project-title">Rock, Paper, Scissors</h3>
-                                <div class="project-description">
-                                    <p>A Rock, Paper, Scissors game.</p>
-                                </div>
-                                <div class="tag-container">
-                                    <div class="tag">JavaScript</div>
-                                    <div class="tag">HTML & CSS</div>
-                                </div>
-                                <!-- todo: .card-links: Project / GitHub -->
-                                <div class="project-links">
-                                    <a href="#">GitHub</a>
-                                    <a href="#">Project</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card #5 -->
-                        <div class="card-container">
-                            <img class="card-image" src="./cards/img/projects/stopwatch-1200x800.png" alt="test-img">
-                            <div class="card-overlay">
-                                <h3 class="project-title">Stopwatch</h3>
-                                <div class="project-description">
-                                    <p>A stopwatch.</p>
-                                    <p>Start. Stop. Reset.</p>
-                                </div>
-                                <div class="tag-container">
-                                    <div class="tag">JavaScript</div>
-                                    <div class="tag">HTML & CSS</div>
-                                </div>
-                                <!-- todo: .card-links: Project / GitHub -->
-                                <div class="project-links">
-                                    <a href="#">GitHub</a>
-                                    <a href="#">Project</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card #6 -->
-                        <div class="card-container">
-                            <img class="card-image" src="./cards/img/projects/digital_clock-1200x800.png" alt="test-img">
-                            <div class="card-overlay">
-                                <h3 class="project-title">Digital Clock</h3>
-                                <div class="project-description">
-                                    <p>A simple digital clock.</p>
-                                </div>
-                                <div class="tag-container">
-                                    <div class="tag">JavaScript</div>
-                                    <div class="tag">HTML & CSS</div>
-                                </div>
-                                <!-- todo: .card-links: Project / GitHub -->
-                                <div class="project-links">
-                                    <a href="#">GitHub</a>
-                                    <a href="#">Project</a>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="./img/angle-right-solid.svg" alt="" class="right-arrow-button arrow-button">
                     </div>
                 </div>
             </section>
